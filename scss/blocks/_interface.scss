@@ -9,7 +9,7 @@ body {
   font-family: 'Montserrat';
   font-weight: 400;
   margin: 0;
-  color: #000000;
+  color: #23283B;
   line-height: 1.6;
   width: 100%;
   max-width: 100%;
@@ -159,6 +159,14 @@ select {
   .section-header {
     &__h {
       line-height: 1.2;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .section-header {
+    &__h {
+      font-size: 28px;
     }
   }
 }

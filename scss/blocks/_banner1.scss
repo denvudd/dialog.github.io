@@ -1,0 +1,149 @@
+.banner1 {
+  margin-top: 120px;
+  position: relative;
+
+  &-bg {
+    max-width: 1440px;
+    width: 100%;
+    height: 441px;
+    background: #3035C4;
+    box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
+    border-radius: 20px;
+
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 60px;
+  }
+
+  &-photo {
+    max-width: 30%;
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &-text {
+    color: #FFFFFF;
+    max-width: 70%;
+    padding-left: 80px;
+
+    &__head {
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 155%;
+    }
+
+    &__p {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      margin-top: 25px;
+    }
+
+    &__button {
+      margin-top: 32px;
+
+      button {
+        padding: 16px 60px;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .banner1-bg {
+    max-width: 1200px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .banner1-bg {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner1 {
+
+    &-container {
+      background: #3035C4;
+      box-shadow: 0px 10px 40px rgba(73, 95, 211, 0.22);
+      border-radius: 20px;
+      padding-bottom: 48px;
+    }
+
+    &-bg {
+      display: none;
+    }
+
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &-photo {
+      max-width: 100%;
+      margin: -60px auto 0px auto;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    &-text {
+      max-width: 100%;
+      padding-left: 0;
+      margin-top: 40px;
+
+      &__head {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner1-text__head {
+    font-size: 21px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .banner1 {
+    margin-top: 106px;
+  }
+
+  .banner1__inner {
+    padding: 0px 15px;
+  }
+
+  .banner1-text__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner1-text__head {
+    word-break: break-all;
+  }
+
+}
