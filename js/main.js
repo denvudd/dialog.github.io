@@ -1,8 +1,8 @@
 'use strict'
 
 document.addEventListener('DOMContentLoaded', () => {
-  function burgerMenu() {
-    const menu = document.querySelector('.burger-menu'),
+  function burgerMenu(selector) {
+    const menu = document.querySelector(selector),
           button = menu.querySelector('.burger-menu__button'),
           links = menu.querySelector('.burger__link');
   
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-  burgerMenu();
+  burgerMenu('.burger-menu');
 });
 
 
