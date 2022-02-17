@@ -1,0 +1,79 @@
+.banner2 {
+  padding-top: 60px;
+
+  &-container {
+    background: url('/img/banner2/banner2-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 70px;
+  }
+
+  &-text {
+    padding-right: 196px;
+
+    &__head {
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 1.2;
+      color: #FFFFFF;
+    }
+  }
+
+  &-button {
+    button {
+      padding: 16px 60px;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner2 {
+    &-text {
+      padding-right: 120px;
+
+      &__head {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .banner2 {
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 28px;
+    }
+
+    &-text {
+      padding-right: 0;
+      
+      &__head {
+        text-align: center;
+      }
+    }
+
+    &-button {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .banner2 {
+    &-text {
+      &__head {
+        font-size: 21px;
+      }
+    }
+  }
+}
