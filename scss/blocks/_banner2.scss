@@ -1,8 +1,9 @@
 .banner2 {
   padding-top: 60px;
+  padding-bottom: 100px;
 
   &-container {
-    background: url('/img/banner2/banner2-bg.jpg');
+    background: url('../img/banner2/banner2-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
@@ -70,6 +71,8 @@
 
 @media (max-width: 576px) {
   .banner2 {
+    padding-bottom: 60px;
+    
     &-text {
       &__head {
         font-size: 21px;

@@ -1,0 +1,279 @@
+.courses {
+  padding-top: 80px;
+  background: #F8F8FF;
+}
+
+.tab {
+  margin-top: 52px;
+
+  &-container {
+    box-shadow: 0px 10px 40px rgba(0, 11, 68, 0.22);
+    border-radius: 10px;
+    background: #FFFFFF;
+    margin-top: 40px;
+  }
+
+  &-header {
+    background: transparent;
+
+    &__items {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      font-weight: 700;
+      padding: 5px 0px 20px 0px;
+      width: 100%;
+      font-size: 18px;
+      color: #3035C4;
+      cursor: pointer;
+      text-align: center;
+
+      &--active {
+        color: #E6514A;
+        border-bottom: 3px solid #E6514A;
+      }
+    }
+  }
+
+  &-content {
+    padding: 48px 52px;
+
+    &__head {
+      font-weight: 800;
+      font-size: 24px;
+      color: #3035C4;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      margin-top: 24px;
+      font-family: Lato;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 1.5;
+      color: #23283B;
+    }
+
+    &__statistics {
+      margin-top: 48px;
+      display: flex;
+
+      &__head {
+        font-weight: 800;
+        font-size: 20px;
+        color: #23283B;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+    }
+
+    &__reference {
+      max-width: 100%;
+      width: 100%;
+      margin-right: 60px;
+
+      &__list {}
+
+      &__li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &__icon {
+          margin-right: 16px;
+          max-width: 16px;
+
+          img {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+
+        &__text {
+          font-family: Lato;
+
+          h4 {
+            font-weight: 800;
+            font-size: 14px;
+          }
+
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+
+    &__structure {
+      max-width: 100%;
+      width: 100%;
+      margin-right: 60px;
+
+      &__progress {}
+
+      &__include {
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &__text {
+          font-family: Lato;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 150%;
+          color: #23283B;
+
+          span {
+            font-weight: 800;
+            color: #E6514A;
+          }
+        }
+
+        &__bar {
+          background: #f1f1f1;
+          border-radius: 10px;
+          height: 4px;
+          width: 100%;
+        }
+      }
+    }
+
+    &__materials {
+      max-width: 100%;
+      width: 100%;
+
+      &__photo {
+        max-width: 131px;
+        width: 100%;
+
+        img {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.tab-show {
+  display: block;
+}
+
+.tab-hide {
+  display: none;
+}
+
+.tab-fade {
+  animation-name: tab-fade;
+  animation-duration: 1s;
+}
+
+@keyframes tab-fade {
+  from { opacity: 0.1 };
+
+  to { opacity: 1 };
+}
+
+@media (max-width: 992px) {
+  .tab {
+    &-header {
+
+      &__items {
+        flex-direction: column;
+      }
+
+      &__item {
+        margin: 0px auto 16px auto;
+        max-width: 50%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-content {
+      &__statistics {
+        flex-wrap: wrap;
+      }
+
+      &__structure {
+        margin-bottom: 40px;
+        margin-right: 0;
+      }
+
+      &__reference {
+        margin-bottom: 40px;
+        margin-right: 0;
+      }
+
+      &__materials {
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .tab {
+    &-header {
+
+      &__items {
+        flex-direction: column;
+      }
+
+      &__item {
+        margin: 0px auto 5px auto;
+        padding-bottom: 10px;
+        max-width: 50%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-content {
+      padding: 32px 24px;
+
+      &__head {
+        font-size: 20px;
+        line-height: 1.3;
+      }
+
+      &__text {
+        font-size: 14px;
+      }
+
+      &__statistics {
+        flex-wrap: wrap;
+      }
+
+      &__structure {
+        margin-bottom: 40px;
+        margin-right: 0;
+      }
+
+      &__reference {
+        margin-bottom: 40px;
+        margin-right: 0;
+      }
+
+      &__materials {
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
