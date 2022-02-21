@@ -1,0 +1,129 @@
+.team {
+  padding-top: 100px;
+  padding-bottom: 60px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+  }
+
+  &-slider {
+    .slick-list {
+      overflow: hidden;
+    }
+
+    .slick-track {
+      display: flex;
+    }
+
+    .slick-prev {
+      display: none !important;
+      width: 0px !important;
+      padding: 0;
+      border: none;
+    }
+
+    .slick-next {
+      display: none !important;
+      width: 0px !important;
+      padding: 0;
+      border: none;
+    }
+
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+  
+      li {
+        list-style: none;
+        margin: 0 10px;
+
+        &:hover {
+          button {
+            background: #3035C4;
+          }
+        }
+      }
+  
+      li.slick-active {
+        button {
+          background: #E6514A;
+        }
+      }
+  
+      button {
+        font-size: 0;
+        width: 8px;
+        height: 13px;
+        background: #DEDEFF;
+        border-radius: 50%;
+        border: 0;
+        outline: none;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &-member {
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 376px;
+    width: 100%;
+
+    &__photo {
+      max-width: 376px;
+      width: 100%;
+
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    &__name {
+      text-align: center;
+      font-weight: 800;
+      font-size: 20px;
+      color: #3035C4;
+      padding-top: 43px;
+    }
+
+    &__text {
+      font-family: Lato;
+      font-weight: normal;
+      font-size: 14px;
+      color: #23283B;
+      padding-top: 32px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .team-member {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-slider {
+    margin-top: 40px;
+
+    .slick-dots {
+      margin-top: 48px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .team {
+    padding-bottom: 40px;
+  }
+}

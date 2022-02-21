@@ -47,7 +47,7 @@
               <img src="img/header/header-social-whatsup.svg" alt="phone icon">
             </div>
             <div class="header-contact__number__text">
-              <a href="tel:+7495255-30-20">+7 (915) 359-95-19</a>
+              <a href="tel:+74952553020">+7 (915) 359-95-19</a>
             </div>
           </div>
         </div>
@@ -70,20 +70,50 @@
           <div class="header-main__nav__call">
             <button class="header-main__nav__button">
               <img src="img/header/btn-phone.svg" alt="phone icon button" class="header-main__nav__callIcon">
-              <div class="header-main__nav__callText">Заказать звонок</div>
+              <div class="header-main__nav__callText" data-modal>Заказать звонок</div>
             </button>
           </div>
         </nav>
         <div class="burger-menu">
           <a href="#" class="burger-menu__button">
             <span class="burger-menu__lines"></span>
-            <ul class="burger-menu__nav">
+            <div class="burger-menu__nav">
               <ul>
-                <li><a href="products.html" class="burger__link">Продукты</a></li>
-                <li><a href="app.html" class="burger__link">Приложение</a></li>
-                <li><a href="contacs.html" class="burger__link">Дистрибуция</a></li>
-                <li><a href="plonq.html" class="burger__link">Где купить</a></li>
+                <li><a href="products.html" class="burger__link">О центре</a></li>
+                <li><a href="app.html" class="burger__link">Онлайн обучение</a></li>
+                <li><a href="contacs.html" class="burger__link">Отзывы</a></li>
+                <li><a href="plonq.html" class="burger__link">База знатий</a></li>
+                <li><a href="plonq.html" class="burger__link">Контакты</a></li>
               </ul>
+              <div class="burger-menu__nav__button">
+                <button class="button--primary">
+                  <img src="img/header/btn-phone.svg" alt="phone icon button" class="header-main__nav__callIcon">
+                  <span>Заказать звонок</span></button>
+              </div>
+              <div class="burger-menu__nav__low">
+                <div class="burger-menu__nav__phone">
+                  <div class="burger-menu__nav__phone__icon">
+                    <img src="img/header/header-social-phone.svg" alt="Phone Icon">
+                  </div>
+                  <div class="burger-menu__nav__phone__num">
+                    <p>+7 (495) 255-30-20</p>
+                  </div>
+                </div>
+                <div class="burger-menu__nav__phone">
+                  <div class="burger-menu__nav__phone__icon">
+                    <img src="img/header/header-social-whatsup.svg" alt="Phone Icon">
+                  </div>
+                  <div class="burger-menu__nav__phone__num">
+                    <p>+7 (915) 359-95-19</p>
+                  </div>
+                </div>
+                <div class="burger-menu__nav__social">
+                  <div class="burger-menu__nav__social__item"><img src="img/header/vk.svg" alt="Social icon vk"></div>
+                  <div class="burger-menu__nav__social__item"><img src="img/header/instagram.svg" alt="Social icon instagram"></div>
+                  <div class="burger-menu__nav__social__item"><img src="img/header/facebook.svg" alt="Social icon facebook"></div>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
@@ -102,7 +132,7 @@
               по-турецки уже <span class="redWord">через 2 месяца</span></h1>
           </div>
           <div class="intro-text__button">
-            <button class="button--primary">Записаться на пробный урок</button>
+            <button class="button--primary" data-modal>Записаться на пробный урок</button>
           </div>
         </div>
         <div class="intro-photo">
@@ -376,7 +406,7 @@
             </div>
           </div>
           <div class="banner2-button">
-            <button class="button--primary">Подписаться</button>
+            <button class="button--primary" data-modal>Подписаться</button>
           </div>
         </div>
       </div>
@@ -882,8 +912,321 @@
         </div>
       </div>
     </section>
+    <section class="team">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__p">
+            <div class="section-header__p__line"></div>
+            <p class="section-header__p__text">Преподаватели</p>
+          </div>
+          <div class="section-header__h">
+            <h1>Наши преподаватели турецкого языка:</h1>
+          </div>
+        </div>
+        <div class="team__inner team-slider">
+          <div class="team-member">
+            <div class="team-member__photo">
+              <img src="img/team/placeholder.jpg" alt="Team Member Photo">
+            </div>
+            <div class="team-member__name">
+              <h3>Озджан Бей</h3>
+            </div>
+            <div class="team-member__text">
+              <p>Здравствуйте!
+                Меня зовут Озджан.
+                Я работаю в языковом центре «Диалог» более 5 лет. За это время многие мои студенты научились очень
+                хорошо говорить на моем родном и любимом турецком языке. Я веду групповые и индивидуальные занятия.
+                Люблю, когда атмосфера на занятиях располагает к тому, чтобы обучение проходило легко, но эффективно.
+                Жду вас в нашей школе!</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-member__photo">
+              <img src="img/team/placeholder.jpg" alt="Team Member Photo">
+            </div>
+            <div class="team-member__name">
+              <h3>Айдемир Бей</h3>
+            </div>
+            <div class="team-member__text">
+              <p>Здравствуйте, меня зовут Айдемир. Я турок, приехал из Стамбула, где учился и работал. В России живу
+                более 12 лет. В Москве окончил РУДН. Работаю преподавателем более 8 лет, веду групповые и индивидуальные
+                занятия. Моя работа позволяет мне каждый день помогать моим студентам осваивать основы турецкого языка и
+                совершенствовать уже пройденный материал. Я очень рад, что многие из моих учеников в дальнейшем
+                применяют свои знания на практике, как в работе так и для личного общения. Жду Вас на своих занятиях!
+              </p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-member__photo">
+              <img src="img/team/placeholder.jpg" alt="Team Member Photo">
+            </div>
+            <div class="team-member__name">
+              <h3>Ирина Ханым</h3>
+            </div>
+            <div class="team-member__text">
+              <p>Ведущий преподаватель курсов. Выпускница Анкарского Университета, педагог с большим опытом преподавания
+                турецкого языка, профессиональный переводчик. Имеет изданные пособия по изучению турецкого языка.
+                Использует собственные методики преподавания. Около 30 лет постоянно проживает в Турции , владеет языком
+                на уровне носителя, регулярно участвует в конференциях и семинарах по развитию методик обучения
+                турецкому языку иностранцам. Принимала непосредственное участие в создании учебника "Хитит", изданного
+                языковым и исследовательским центром изучения и развития турецкого Tömer.</p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-member__photo">
+              <img src="img/team/placeholder.jpg" alt="Team Member Photo">
+            </div>
+            <div class="team-member__name">
+              <h3>Анастасия ханым</h3>
+            </div>
+            <div class="team-member__text">
+              <p>Я преподаю турецкий язык уже 7 лет, 6 из них в Онлайн школе "Диалог".
+                В 2016 году окончила Крымский федеральный университет имени В.И. Вернадского по специальности турецкий
+                язык и литература. Преподавание для меня не просто работа, а любимое дело. Всегда нахожу подход к
+                каждому ученику, учитывая цели обучения.
+                Я убеждена, что каждый может изучить турецкий. Самое главное от ученика - это желание ученика двигаться
+                вперед.
+                Своя методика и индивидуальный подход к каждому ученику - секрет успешных результатов моих выпускников.
+              </p>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-member__photo">
+              <img src="img/team/placeholder.jpg" alt="Team Member Photo">
+            </div>
+            <div class="team-member__name">
+              <h3>Наиля ханым</h3>
+            </div>
+            <div class="team-member__text">
+              <p>Merhabalar.
+                Я занимаюсь преподаванием турецкого языка уже 10 лет. Турецкий - мой родной язык, поэтому я могу просто
+                и понятно объяснить даже самые сложные правила и обороты речи.
+                Каждый раз я стараюсь найти общий язык с любым учеником - и с новичком, и с теми, кто хочет поставить
+                речь. На своих уроках всегда даю дополнительный материалы из современного турецкого, так что все уходят
+                с урока в отличном настроении и с еще большим желанием учить турецкий.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner3">
+      <div class="container banner3-container">
+        <div class="banner3__inner">
+          <div class="banner3-text">
+            <div class="banner3-text__preHead">
+              <div class="banner3-text__preHead__line"></div>
+              <div class="banner3-text__preHead__text">Что нужно?</div>
+            </div>
+            <div class="banner3-text__head">
+              <h1>Что нужно, чтобы начать?</h1>
+            </div>
+            <div class="banner3-text__description">
+              <ul class="banner3-text__description__list">
+                <li class="banner3-text__description__item">
+                  <div class="banner3-text__description__item__num">
+                    <span>1.</span>
+                  </div>
+                  <div class="banner3-text__description__item__text">
+                    <p>Оставить заявку</p>
+                  </div>
+                </li>
+                <li class="banner3-text__description__item">
+                  <div class="banner3-text__description__item__num">
+                    <span>2.</span>
+                  </div>
+                  <div class="banner3-text__description__item__text">
+                    <p>Получить консультацию менеджера, который поможет вам
+                      выбрать подходящий формат обучения и
+                      сориентирует по условиям</p>
+                  </div>
+                </li>
+                <li class="banner3-text__description__item">
+                  <div class="banner3-text__description__item__num">
+                    <span>3.</span>
+                  </div>
+                  <div class="banner3-text__description__item__text">
+                    <p>Приступить к изучению прекрасного турецкого языка!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__p">
+            <div class="section-header__p__line"></div>
+            <p class="section-header__p__text">Преимущества</p>
+          </div>
+          <div class="section-header__h">
+            <h1>Наши преимущества:</h1>
+          </div>
+        </div>
+        <div class="benefits__inner">
+          <div class="benefits-item">
+            <div class="benefits-item__icon"><img src="img/benefits/icon1.svg" alt="Benefits Icon 1"></div>
+            <div class="benefits-item__title">12000 студентов</div>
+            <div class="benefits-item__text">За 16 лет мы обучили свободному общению</div>
+          </div>
+          <div class="benefits-item">
+            <div class="benefits-item__icon"><img src="img/benefits/icon2.svg" alt="Benefits Icon 2"></div>
+            <div class="benefits-item__title">1125 из них</div>
+            <div class="benefits-item__text">переехали на ПМЖ в Турцию</div>
+          </div>
+          <div class="benefits-item">
+            <div class="benefits-item__icon"><img src="img/benefits/icon3.svg" alt="Benefits Icon 3"></div>
+            <div class="benefits-item__title">4169 студентов</div>
+            <div class="benefits-item__text">получили работу в турецких компаниях</div>
+          </div>
+        </div>
+        <div class="benefits-button">
+          <button class="button--primary" data-modal>Записаться на пробный урок </button>
+        </div>
+      </div>
+    </section>
+    <section class="banner4">
+      <div class="container">
+        <div class="banner4__inner">
+          <div class="banner4-text">
+            <div class="banner4-text__head">
+              <h3>Остались вопросы?</h3>
+            </div>
+            <div class="banner4-text__p">
+              <p>Если у вас возникли какие-либо вопросы, пожалуйста, не стесняйтесь задать ваш вопрос. Наши менеджеры с
+                радостью дадут всю необходимую информацию, подберут подходящий именно для вас вариант обучения,
+                расскажут об актуальных акциях и выгодных предложениях. Ждем вас на занятиях!</p>
+            </div>
+          </div>
+          <div class="banner4__button">
+            <button class="button--primary" data-modal>Задать вопрос</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer-watermark">
+          <div class="footer-watermark__logo">
+            <img src="img/footer/Logo.svg" alt="Footer Logo">
+          </div>
+          <div class="footer-watermark__text">
+            <p>Копирование информации с сайта и ее размещение возможно только с ссылкой на данный ресурс.</p>
+            <p>Языковые курсы «Диалог» © 2005 - 2019</p>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu__block">
+            <a href="" class="footer-menu__block__link">О центре</a>
+            <a href="" class="footer-menu__block__link">Курсы</a>
+            <a href="" class="footer-menu__block__link">Отзывы учеников</a>
+            <a href="" class="footer-menu__block__link">База знатий</a>
+            <a href="" class="footer-menu__block__link">Узнать уровень турецкого</a>
+            <a href="" class="footer-menu__block__link">Контакты</a>
+          </div>
+          <div class="footer-menu__block">
+            <a href="" class="footer-menu__block__link">Обучение в групппе</a>
+            <a href="" class="footer-menu__block__link">Индивидуальные занятия</a>
+            <a href="" class="footer-menu__block__link">Корпоративное обучение</a>
+            <a href="" class="footer-menu__block__link">Онлайн-обучение</a>
+            <a href="" class="footer-menu__block__link">Курсы турецкого по Skype</a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <div class="footer-contact__block">
+            <div class="footer-contact__block__title">
+              <h4>Адрес</h4>
+            </div>
+            <div class="footer-contact__block__text">
+              <p>г. Москва, пл. Тверская застава д. 3, 4 этаж, оф. 410</p>
+            </div>
+          </div>
+          <div class="footer-contact__block">
+            <div class="footer-contact__block__title">
+              <h4>Время работы</h4>
+            </div>
+            <div class="footer-contact__block__text">
+              <p>Мы работаем ежедневно с 9:00 до 21:00</p>
+            </div>
+          </div>
+          <div class="footer-contact__block">
+            <div class="footer-contact__block__title">
+              <h4>Контакты</h4>
+            </div>
+            <div class="footer-contact__block__numbers">
+              <div class="footer-contact__block__phone">
+                <div class="footer-contact__block__phone__icon"><img src="img/footer/phone.svg" alt="Phone icon"></div>
+                <div class="footer-contact__block__phone__num">
+                  <a href="te:+74952553020">+7 (495) 255-30-20</a>
+                </div>
+              </div>
+              <div class="footer-contact__block__phone">
+                <div class="footer-contact__block__phone__icon"><img src="img/footer/whatsapp.svg" alt="Phone icon"></div>
+                <div class="footer-contact__block__phone__num">
+                  <a href="tel:+79153599519">+7 (915) 359-95-19</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-low">
+        <div class="footer-low__social">
+          <div class="footer-low__social__item"><img src="img/footer/vk.svg" alt="Social Logo"></div>
+          <div class="footer-low__social__item"><img src="img/footer/instagram.svg" alt="Social Logo"></div>
+          <div class="footer-low__social__item"><img src="img/footer/facebook.svg" alt="Social Logo"></div>
+          <div class="footer-low__social__item"><img src="img/footer/youtube.svg" alt="Social Logo"></div>
+        </div>
+        <div class="footer-low__links">
+          <a href="#">Информация о платежах</a>
+          <a href="#">Соглашение об обработке персональных данных</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="modal-close__button" data-modalClose>&times;</button>
+        <div class="modal-content__photo">
+        </div>
+        <form action="#" class="modal-content__form">
+          <div class="modal-content__form__title">
+            <h1>Подача заявки</h1>
+          </div>
+          <div class="modal-content__form__text">
+            <p>Оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время</p>
+          </div>
+          <div class="modal-content__form__item">
+            <div class="modal-content__form__item__title">
+              <h3>Ваше имя и фамилия</h3>
+            </div>
+            <input required placeholder="Имя и Фамилия" type="text" class="modal-content__form__item__input">
+          </div>
+          <div class="modal-content__form__item">
+            <div class="modal-content__form__item__title">
+              <h3>Ваш телефон/whatsapp</h3>
+            </div>
+            <input required placeholder="Телефон/Whatsapp" type="tel" class="modal-content__form__item__input">
+          </div>
+          <div class="modal-content__form__item">
+            <div class="modal-content__form__item__title">
+              <h3>Ваш e-mail</h3>
+            </div>
+            <input required placeholder="E-mail" type="email" class="modal-content__form__item__input">
+          </div>
+          <div class="modal-content__form__button">
+            <button type="submit" class="button--primary">Подать заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="js/main.js"></script>
   <script src="js/slider.js""></script>
 </body>

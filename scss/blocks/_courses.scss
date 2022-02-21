@@ -1,5 +1,6 @@
 .courses {
   padding-top: 80px;
+  padding-bottom: 80px;
   background: #F8F8FF;
 }
 
@@ -26,13 +27,17 @@
       padding: 5px 0px 20px 0px;
       width: 100%;
       font-size: 18px;
-      color: #3035C4;
+      color: #8e91ee;
       cursor: pointer;
       text-align: center;
 
       &--active {
         color: #E6514A;
         border-bottom: 3px solid #E6514A;
+      }
+
+      &:hover {
+        color: #3035C4;
       }
     }
   }

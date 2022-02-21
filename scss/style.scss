@@ -7,8 +7,6 @@
 
 /* Header */
 @import 'blocks/header';
-/* Mobile Menu */
-// @import 'blocks/burgerMenu';
 
 /* =========== MAIN =========== */
 /* Intro */
@@ -17,11 +15,28 @@
 @import 'blocks/video';
 /* Programs */
 @import 'blocks/programs';
-/* Banner #1 */
-@import 'blocks/banner1';
 /* Partners */
 @import 'blocks/partners';
-/* Banner #2 */
-@import 'blocks/banner2';
 /* Courses */
 @import 'blocks/courses';
+/* Team */
+@import 'blocks/team';
+/* Benefits */
+@import 'blocks/benefits';
+
+
+/* == Banners == */
+/* Banner #1 */
+@import 'blocks/banner1';
+/* Banner #2 */
+@import 'blocks/banner2';
+/* Banner #3 */
+@import 'blocks/banner3';
+/* Banner #4 */
+@import 'blocks/banner4';
+
+/* == Modal == */
+@import 'blocks/modal';
+
+/* Footer */
+@import 'blocks/footer';

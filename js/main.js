@@ -25,21 +25,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function modal() {
+    const modal = document.querySelector('.modal'),
+      modalOpenTrigger = document.querySelectorAll('[data-modal]'),
+      modalCloseTrigger = document.querySelectorAll('[data-modalClose]');
+
+    modalOpenTrigger.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        modal.classList.toggle('modal--active');
+        document.querySelector('html').style.overflowY = "hidden";
+      });
+    });
+
+    modalCloseTrigger.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        modal.classList.toggle('modal--active');
+        document.querySelector('html').style.overflowY = "";
+      })
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.toggle('modal--active');
+        document.querySelector('html').style.overflowY = "";
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.code === "Escape" && modal.classList.contains('modal--active')) {
+        modal.classList.toggle('modal--active');
+        document.querySelector('html').style.overflowY = "";
+      }
+    });
+  }
+
   /* Tabs */
   function tabs() {
     let tabs = document.querySelectorAll('.tab-header__item'),
-        tabsContent = document.querySelectorAll('.tab-content'),
-        tabsParent = document.querySelector('.tab-header__items');
+      tabsContent = document.querySelectorAll('.tab-content'),
+      tabsParent = document.querySelector('.tab-header__items');
 
     function hideTabContent() {
       tabsContent.forEach(item => {
-      item.classList.add('tab-hide');
-      item.classList.remove('tab-show', 'tab-fade');
-    });
+        item.classList.add('tab-hide');
+        item.classList.remove('tab-show', 'tab-fade');
+      });
 
-    tabs.forEach(item => {
-      item.classList.remove('tab-header__item--active');
-    });
+      tabs.forEach(item => {
+        item.classList.remove('tab-header__item--active');
+      });
     }
 
     function showTabContent(i = 0) {
@@ -65,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   burgerMenu('.burger-menu');
+  modal();
   tabs();
 
 });
