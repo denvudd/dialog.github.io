@@ -25,10 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function modal() {
-    const modal = document.querySelector('.modal'),
+  /* Modal Window */
+  function modal(selector) {
+    const modal = document.querySelector(selector),
       modalOpenTrigger = document.querySelectorAll('[data-modal]'),
       modalCloseTrigger = document.querySelectorAll('[data-modalClose]');
+
+    function closeModal() {
+      modal.classList.toggle('modal--active');
+      document.querySelector('html').style.overflowY = "";
+    }
 
     modalOpenTrigger.forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -38,23 +44,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     modalCloseTrigger.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        modal.classList.toggle('modal--active');
-        document.querySelector('html').style.overflowY = "";
-      })
+      btn.addEventListener('click', () => closeModal());
     });
 
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {
-        modal.classList.toggle('modal--active');
-        document.querySelector('html').style.overflowY = "";
+        closeModal();
       }
     });
 
     document.addEventListener('keydown', (e) => {
       if (e.code === "Escape" && modal.classList.contains('modal--active')) {
-        modal.classList.toggle('modal--active');
-        document.querySelector('html').style.overflowY = "";
+        modalClose();
       }
     });
   }
@@ -99,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   burgerMenu('.burger-menu');
-  modal();
+  modal('.modal');
   tabs();
 
 });
